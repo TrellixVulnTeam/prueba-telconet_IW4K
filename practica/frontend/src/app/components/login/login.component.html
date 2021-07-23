@@ -1,0 +1,14 @@
+<mat-card-title>
+    <h2>Acceso</h2>
+</mat-card-title>
+
+<div class="login-form">
+    <form class="custom-form" method="POST" action="/Comentarios">
+        <input type="text" [(ngModel)]="email" name="email" placeholder="Correo electrónico" required="required"
+            autocomplete="off" />
+        <input type="password" [(ngModel)]="clave" name="clave" placeholder="Clave" required="required" />
+        <button type="submit" (click)="submitLogin()">Enviar</button>
+
+    </form>
+
+</div>

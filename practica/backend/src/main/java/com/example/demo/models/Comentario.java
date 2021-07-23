@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -16,23 +18,22 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "evento")
-public class Evento {
+@Table(name = "comentario")
+public class Comentario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nombre;
+    private String descripcion;
 
     @Temporal(TemporalType.TIMESTAMP)
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "America/Guayaquil")
-    private Date fecha_evento;
+    private Date fecha_registro;
 
-    private String empresario;
-    private String modalidad; // privado o publico
-    private Double precio;
-    private Integer cantidad_entradas;
     private String estado;
 
+    @OneToOne
+    @JoinColumn(name = "usuario_id")
+    private User usuario;
 
 }

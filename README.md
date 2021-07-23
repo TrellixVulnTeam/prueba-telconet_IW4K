@@ -1,4 +1,4 @@
-# eventos
+# Gestion de comentarios
 
 ### Es importante no cambiar los archivos de configuración y/o puertos ya establecidos
 
@@ -11,7 +11,7 @@ Este es un proyecto para demostrar el uso de la herramienta Springboot
 ```shell
 git clone https://gitlab.com/23julio2021/lissette-noemi-candelario-muniz.git
 ```
-### Crear o ejecutar el query en mysql, ublicado en la siguiente ruta
+### Crear o ejecutar el query en mysql para la base de datos, ublicado en la siguiente ruta
    adicional/bd_gestion.sql
 
 ### Instalar paquetes maven

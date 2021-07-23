@@ -1,0 +1,15 @@
+<div class="registro">
+    <form class="custom-form" method="post">
+        <div>
+            <h2>Registro de Comentarios</h2>
+        </div>
+        <input type="text" [(ngModel)]="nombre" name="nombre" placeholder="Nombre de Comentario" required="required" />
+
+        <input type="date" [(ngModel)]="fecha_fin" name="fecha_fin" placeholder="fecha_fin" required="required" />
+        <div hidden>
+            <input type="number" [(ngModel)]="usuario" name="usuario" placeholder="usuario logueado" min="1" value="1"
+                required="required" />
+        </div>
+        <button type="submit" (click)="registro()">Registrar</button>
+    </form>
+</div>

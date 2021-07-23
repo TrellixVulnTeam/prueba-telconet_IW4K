@@ -1,4 +1,5 @@
 package com.example.demo.models;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -21,8 +22,12 @@ public class User {
     private String nombre;
     @Column(name = "email", nullable = false, unique = true)
     private String email;
+
     private String estado;
+
+    @Column(name = "clave", nullable = false, unique = true, length = 8)
     private String clave;
+
     private String rol;
 
 }
