@@ -1,16 +1,31 @@
-# Lissette Noemi Candelario Muñiz
-noemi.candelario@consulti.ec
+# eventos
 
-# Bienvenido al reto Telconet !
+### Es importante no cambiar los archivos de configuración y/o puertos ya establecidos
 
-Aquí encontrarás las instrucciones para que puedas realizar la prueba práctica.
+Este es un proyecto para demostrar el uso de la herramienta Springboot
 
-# Prueba de conocimiento
-## Acceso
+## Para comenzar:
 
-Accede al siguiente enlace [shorturl.at/cuMU4](http://shorturl.at/cuMU4) y descarga el archivo a tu máquina local.
+### Clonar el repositorio
 
+```shell
+git clone https://gitlab.com/23julio2021/lissette-noemi-candelario-muniz.git
+```
+### Crear o ejecutar el query en mysql, ublicado en la siguiente ruta
+   query/bd_gestion.sql
 
-## Repuestas
+### Instalar paquetes maven
 
-> **Nota:** La documentación implica diagramas, scripts bd, código fuente, instructivo de depsliegue, evidencia de funcionamiento, videos etc.
+Instalar los paquetes npm descritos en el archivo `pom.xml` e iniciar el proyecto:
+
+```shell
+mvn clean install
+
+mvn spring-boot:run
+```
+
+El comando `mvn spring-boot:run` arranca la aplicación, observa cambios del código fuente y se accede a traves del puerto `5000`
+
+Para apagar el server manualmente usar `Ctrl+C`
+
+El comando para ejecutar el fontend es ´ng serve´
