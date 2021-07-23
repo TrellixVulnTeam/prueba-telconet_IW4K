@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  springboot:
+    image: "eventos/springboot:latest"
+    container_name: springboot
+    hostname: "springboot"
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./src/main/resources/application.properties:/usr/app/application.properties
