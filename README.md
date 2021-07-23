@@ -12,7 +12,7 @@ Este es un proyecto para demostrar el uso de la herramienta Springboot
 git clone https://gitlab.com/23julio2021/lissette-noemi-candelario-muniz.git
 ```
 ### Crear o ejecutar el query en mysql, ublicado en la siguiente ruta
-   query/bd_gestion.sql
+   adicional/bd_gestion.sql
 
 ### Instalar paquetes maven
 
@@ -24,7 +24,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-El comando `mvn spring-boot:run` arranca la aplicación, observa cambios del código fuente y se accede a traves del puerto `5000`
+El comando `mvn spring-boot:run` arranca la aplicación pero se debe ubicar en la ruta del backend, observa cambios del código fuente y se accede a traves del puerto `5000`
 
 Para apagar el server manualmente usar `Ctrl+C`
 
