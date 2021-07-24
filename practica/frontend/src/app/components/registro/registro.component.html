@@ -1,9 +1,9 @@
 <div class="registro">
     <form class="custom-form" method="post">
         <div><h2>Registro de usuario</h2></div>
-        <input type="text" [(ngModel)]="nombre" name="nombre" placeholder="Nombre" required="required" />
-        <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required="required" />
-        <input type="password" [(ngModel)]="clave" maxlength="8" name="clave" placeholder="Clave" required="required" />
+        <input type="text" [(ngModel)]="nombre" name="nombre" placeholder="Nombre" required />
+        <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required />
+        <input type="password" [(ngModel)]="clave" maxlength="8" name="clave" placeholder="Clave" required />
         <button type="submit" (click)="registro()">Registrar</button>
     </form>
 </div>

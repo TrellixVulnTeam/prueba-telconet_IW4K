@@ -8,7 +8,7 @@ ul, ol {
 }
 
 .nav li a {
-    background-color:rgba(24, 9, 185, 0.105);
+    background-color:rgba(10, 106, 21, 0.105);
     color:rgb(16, 15, 14);
     text-decoration:none;
     padding:10px 12px;
@@ -16,7 +16,7 @@ ul, ol {
 }
 
 .nav li a:hover {
-    background-color:#3d149c;
+    background-color:#033734;
 }
 
 .nav li ul {

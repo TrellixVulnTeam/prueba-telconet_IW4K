@@ -42,7 +42,7 @@ export class ComentarioComponent implements OnInit {
   }
 
   public getAllReports() {
-    
+
     let resp = this._ComentarioService.listarComentarios();
     resp.subscribe(
       report => this.dataSource.data = report as ComentarioReports[]

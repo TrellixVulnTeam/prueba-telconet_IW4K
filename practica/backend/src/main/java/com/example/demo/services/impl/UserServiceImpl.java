@@ -40,6 +40,7 @@ public class UserServiceImpl implements UserService {
                 throw new ResourceAccessException("Correo ya esta registrado y activo");
             }
             request.setEstado("activo");
+            request.setRol("Normal");
             response = repositorioUsuario.save(request);
         } catch (Exception e) {
             throw new ResourceAccessException(e.getMessage());
@@ -47,6 +48,7 @@ public class UserServiceImpl implements UserService {
         return response;
     }
 
+    // actualizacion
     public User actualizarUser(Long userId, User request) throws ResourceAccessException {
 
         User response = new User();
@@ -62,7 +64,7 @@ public class UserServiceImpl implements UserService {
             usuario.setEmail(request.getEmail() != null ? request.getEmail() : usuario.getEmail());
             usuario.setEstado(request.getEstado() != null ? request.getEstado() : usuario.getEstado());
             usuario.setClave(request.getClave() != null ? request.getClave() : usuario.getClave());
-            // usuario.setRol(request.getRol() != null ? request.getRol() : usuario.getRol());
+            usuario.setRol(request.getRol() != null ? request.getRol() : usuario.getRol());
             usuario.setId(request.getId() != null ? request.getId() : usuario.getId());
             response = repositorioUsuario.save(usuario);
         } catch (Exception e) {
