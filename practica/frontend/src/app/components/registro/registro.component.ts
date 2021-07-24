@@ -10,17 +10,12 @@ export class RegistroComponent implements OnInit {
   email: string = "";
   nombre: string = "";
   clave: string = "";
-  confirmClave: string = "";
 
   constructor(public RegistroUsuarioService: RegistroService) { }
 
   ngOnInit(): void { }
 
   registro() {
-    // console.log(this.nombre);
-    // console.log(this.email);
-    // console.log(this.clave);
-
     let usuario = {
       email: this.email, nombre: this.nombre, clave: this.clave
     }

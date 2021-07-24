@@ -2,7 +2,7 @@ version: "3"
 
 services:
   springboot:
-    image: "eventos/springboot:latest"
+    image: "practica/backend/springboot:latest"
     container_name: springboot
     hostname: "springboot"
     restart: always

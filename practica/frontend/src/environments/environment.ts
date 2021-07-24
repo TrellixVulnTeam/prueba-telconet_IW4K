@@ -13,13 +13,13 @@ export interface UsuarioReports {
   nombre: string;
   email: string;
   estado: string;
-  rol: number;
+  rol: string;
   clave: string;
 }
 
 export interface ComentarioReports {
-  nombre:  string;
-  estado:  string;
+  descripcion:  string;
+  fecha_registro:  string;
   usuario: number;
 }
 

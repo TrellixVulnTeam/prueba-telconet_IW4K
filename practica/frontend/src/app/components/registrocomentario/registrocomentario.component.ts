@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { RegistroComentarioService } from 'src/app/services/registroComentario.service';
+import { RegistroComentarioService } from 'src/app/services/registrocomentario.service';
 
 @Component({
-  selector: 'app-registroComentario',
-  templateUrl: './registroComentario.component.html',
-  styleUrls: ['./registroComentario.component.css']
+  selector: 'app-registrocomentario',
+  templateUrl: './registrocomentario.component.html',
+  styleUrls: ['./registrocomentario.component.css']
 })
 export class RegistroComentarioComponent implements OnInit {
 
   // registro
-  nombre: string = ""
-  fecha_fin = new Date()
+  descripcion: string = ""
+  fecha_registro = new Date()
   usuario: number = 0
 
   constructor(public RegistroComentarioService: RegistroComentarioService, public router: Router) { }
@@ -23,7 +23,7 @@ export class RegistroComentarioComponent implements OnInit {
     } else {
       let usuario = JSON.parse(sesion)
       this.usuario = usuario.id;
-      this.router.navigate(["/Comentarios"])
+      this.router.navigate(["/comentarios"])
     }
     console.log(sesion)
   }
@@ -34,7 +34,7 @@ export class RegistroComentarioComponent implements OnInit {
 
   registro() {
     let Comentario = {
-      nombre: this.nombre, fecha_fin: this.fecha_fin, usuario_id: this.usuario
+      descripcion: this.descripcion, fecha_registro: this.fecha_registro, usuario: this.usuario
     }
     this.RegistroComentarioService.registrarComentario(Comentario).subscribe(data => {
       if (data !== null) {

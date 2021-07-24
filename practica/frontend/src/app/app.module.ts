@@ -17,8 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComentarioComponent } from './components/comentario/comentario.component';
 import { RegistroComponent } from './components/registro/registro.component';
-import { RegistroComentarioComponent } from './components/registrocomentario/registroComentario.component';
-import { HistorialComponent } from './components/historial/historial.component';
+import { RegistroComentarioComponent } from './components/registrocomentario/registrocomentario.component';
 import { NgxMatDatetimePickerModule, NgxMatTimepickerModule } from '@angular-material-components/datetime-picker';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -29,8 +28,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
     LoginComponent,
     ComentarioComponent,
     RegistroComponent,
-    RegistroComentarioComponent,
-    HistorialComponent
+    RegistroComentarioComponent
   ],
   imports: [
     BrowserModule,

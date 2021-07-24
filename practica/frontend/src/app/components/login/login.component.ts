@@ -8,7 +8,7 @@ import { UsuariosService } from 'src/app/services/usuarios.service';
 })
 
 export class LoginComponent implements OnInit {
-  email: string = "lncamu@gmail.com"
+  email: string = ""
   clave: string = ""
 
   constructor(public UsuariosService: UsuariosService, public router: Router) { }

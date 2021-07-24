@@ -12,7 +12,7 @@ export interface PeriodicElement {
 }
 
 @Component({
-  selector: 'app-Comentario',
+  selector: 'app-comentario',
   templateUrl: './comentario.component.html',
   styleUrls: ['./comentario.component.css']
 })

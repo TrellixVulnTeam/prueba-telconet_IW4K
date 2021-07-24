@@ -3,9 +3,9 @@
         <div>
             <h2>Registro de Comentarios</h2>
         </div>
-        <input type="text" [(ngModel)]="nombre" name="nombre" placeholder="Nombre de Comentario" required="required" />
+        <input type="text" [(ngModel)]="descripcion" name="descripcion" placeholder="descripcion de Comentario" required="required" />
 
-        <input type="date" [(ngModel)]="fecha_fin" name="fecha_fin" placeholder="fecha_fin" required="required" />
+        <input type="date" [(ngModel)]="fecha_registro" name="fecha_registro" placeholder="fecha_registro" required="required" />
         <div hidden>
             <input type="number" [(ngModel)]="usuario" name="usuario" placeholder="usuario logueado" min="1" value="1"
                 required="required" />

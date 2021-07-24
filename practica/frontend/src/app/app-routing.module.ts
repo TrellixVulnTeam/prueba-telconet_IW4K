@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
-import { RegistroComentarioComponent } from './components/registrocomentario/registroevento.component';
+import { RegistroComentarioComponent } from './components/registrocomentario/registrocomentario.component';
 import { ComentarioComponent } from './components/comentario/comentario.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 
