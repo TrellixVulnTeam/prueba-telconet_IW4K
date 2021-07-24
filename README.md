@@ -2,8 +2,6 @@
 
 ### Es importante no cambiar los archivos de configuración y/o puertos ya establecidos
 
-Este es un proyecto para demostrar el uso de la herramienta Springboot
-
 ## Para comenzar:
 
 ### Clonar el repositorio
