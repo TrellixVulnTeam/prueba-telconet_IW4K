@@ -32,8 +32,6 @@ public class Comentario {
 
     private String estado;
 
-    @OneToOne
-    @JoinColumn(name = "usuario_id")
-    private User usuario;
+    private Long usuario_id;
 
 }

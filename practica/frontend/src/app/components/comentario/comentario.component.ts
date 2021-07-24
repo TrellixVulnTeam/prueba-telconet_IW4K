@@ -21,7 +21,7 @@ export class ComentarioComponent implements OnInit {
 
   ELEMENT_DATA!: ComentarioReports[];
 
-  displayedColumns: string[] = ['usuario', 'nombre', 'estado'];
+  displayedColumns: string[] = ['descripcion', 'estado'];
   dataSource = new MatTableDataSource<ComentarioReports>(this.ELEMENT_DATA);
 
   constructor(private _ComentarioService: ComentarioService, public router: Router) { }

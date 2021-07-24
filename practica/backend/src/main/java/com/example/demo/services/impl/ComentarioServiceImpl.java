@@ -51,7 +51,7 @@ public class ComentarioServiceImpl implements ComentarioService {
             comentario.setId(request.getId() != null ? request.getId() : comentario.getId());
             comentario.setDescripcion(request.getDescripcion() != null ? request.getDescripcion() : comentario.getDescripcion());
             comentario.setEstado(request.getEstado() != null ? request.getEstado() : comentario.getEstado());
-            comentario.setUsuario(request.getUsuario() != null ? request.getUsuario() : comentario.getUsuario());
+            comentario.setUsuario_id(request.getUsuario_id() != null ? request.getUsuario_id() : comentario.getUsuario_id());
 
             request.setFecha_registro(new Date());
             response = repositorioComentario.save(comentario);
