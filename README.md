@@ -27,3 +27,6 @@ El comando `mvn spring-boot:run` arranca la aplicación pero se debe ubicar en l
 Para apagar el server manualmente usar `Ctrl+C`
 
 El comando para ejecutar el fontend es ´ng serve´
+
+### Dockerizar el aplicativo
+Para el backend , nos situalmos en la carpeta del mismo y en terminal ejecutamos `docker build --no-cahe --build-arg version=1.0.0-REALSE -t springboot:latest .` para crear la imagen.

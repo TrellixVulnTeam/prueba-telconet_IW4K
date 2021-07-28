@@ -1,5 +1,4 @@
 FROM maven:3.5.2-jdk-8-alpine AS MAVEN_BUILD
-
 WORKDIR /build/
 
 COPY pom.xml ./
@@ -13,7 +12,7 @@ WORKDIR /app
 
 ARG version=${version}
 COPY --from=MAVEN_BUILD /build/target/classes/application.properties /app/
-COPY --from=MAVEN_BUILD /build/target/template-springboot-1.0.0-RELEASE.jar /app/app.jar
+COPY --from=MAVEN_BUILD /build/target/demo-0.0.1-SNAPSHOT.jar /app/app.jar
 
 EXPOSE 5000
 
